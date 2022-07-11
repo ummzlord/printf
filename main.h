@@ -22,4 +22,16 @@ char *rot13(va_list list);
 char *rev_string(va_list list);
 char *itoOctal(va_list list);
 
+/**
+ * struct types - struct
+ * @id: identifier of type to print (e.g. c means char)
+ * @func: ptr to functions that print according to identifier (e.g. print_c)
+ */
+
+typedef struct types
+{
+    char id;
+    char *(*func)(va_list);
+} print;
+
 #endif
