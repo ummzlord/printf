@@ -4,8 +4,10 @@ _printf -- formatted output
 .SH SYNOPSIS
 _printf format [arguments, ...]
 .SH DESCRIPTION
-Our custom _printf utility formats and prints its arguments using the format string.
-The format string is a character string which contains specifiers and flags
+The function _printf is a variadic function that produces a string according to a
+.I format
+and prints it to the standard output, much like the C standard library function printf. It can receive a variable number of arguments.
+This function has been created in the context of a project for ALX AFRICA.
 _printf parses the format string and replaces specifiers with variadic arguments.
 .SH RETURN VALUE
 The _printf utility returns the number of bytes written on success, and -1 on failure.
@@ -17,4 +19,4 @@ No known bugs, does not implement all qualities of stdio printf, however.
 .SH IMPROVEMENTS
 Implement width, percision, length specifiers for integers, and the other flags '-' & '0'
 .SH AUTHOR
-Munachi Brian Umeh & Edison Chimezie
+Munachi Brian Umeh & Edison Chimezie, Cohort 7.
