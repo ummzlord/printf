@@ -1,1 +1,7 @@
-.vscode/c_cpp_properties.json
+# -*- mode: gitignore; -*-
+*~
+# putchar
+_putchar.c
+*.c.swp
+# main
+*main.c
