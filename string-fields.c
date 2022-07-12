@@ -1,6 +1,6 @@
 #include "main.h"
 
-/* Code Credit : Eddie Chimezie and Munachi Brian Umehm*/
+/* Code Credit : Eddie Chimezie and Munachi Brian Umeh */
 /**
  * get_precision - gets the precision from the format string
  * @p: the format string
