@@ -10,28 +10,28 @@
  */
 int print_from_to(char *start, char *stop, char *except)
 {
-	int add = 0;
+	int sum = 0;
 
 	while (start <= stop)
 	{
 		if (start != except)
-			add += _putchar(*start);
+			sum += _putchar(*start);
 		start++;
 	}
-	return (add);
+	return (sum);
 }
 
 /**
  * print_rev - prints string in reverse
- * @aa: string
+ * @ap: string
  * @params: the parameters struct
  *
  * Return: number bytes printed
  */
-int print_rev(va_list aa, params_t *params)
+int print_rev(va_list ap, params_t *params)
 {
-	int len, add = 0;
-	char *str = va_arg(aa, char *);
+	int len, sum = 0;
+	char *str = va_arg(ap, char *);
 	(void)params;
 
 	if (str)
@@ -40,25 +40,25 @@ int print_rev(va_list aa, params_t *params)
 			len++;
 		str--;
 		for (; len > 0; len--, str--)
-			add += _putchar(*str);
+			sum += _putchar(*str);
 	}
-	return (add);
+	return (sum);
 }
 
 /**
  * print_rot13 - prints string in rot13
- * @a: string
+ * @ap: string
  * @params: the parameters struct
  *
  * Return: number bytes printed
  */
-int print_rot13(va_list aa, params_t *params)
+int print_rot13(va_list ap, params_t *params)
 {
 	int i, index;
 	int count = 0;
 	char arr[] =
 		"NOPQRSTUVWXYZABCDEFGHIJKLM      nopqrstuvwxyzabcdefghijklm";
-	char *a = va_arg(aa, char *);
+	char *a = va_arg(ap, char *);
 	(void)params;
 
 	i = 0;
